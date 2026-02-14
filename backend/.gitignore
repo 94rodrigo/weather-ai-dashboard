@@ -1,0 +1,24 @@
+# Java backend
+HELP.md
+target/
+.mvn/
+.classpath
+.project
+.factorypath
+.settings/
+.idea/
+*.iws
+*.iml
+*.ipr
+.env
+.env.*
+.DS_Store
+Thumbs.db
+mvnw
+mvnw.cmd
+# Editor files
+.vscode/
+# Misc
+*.bak
+# Ignore logs
+*.log

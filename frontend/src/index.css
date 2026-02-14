@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+.background-color-1 {
+  background-color: #2a3439;
+}
+
+.background-color-2 {
+  background-color: #393e41;
+}
+
+.list-background-color {
+  background-color: #063e67;
+}
+
+.list-background-color:hover {
+  background-color: #055a8c;
+}
+
+.font-color-1 {
+  color: #D3DAD9;
+}
+
+.weather-column::-webkit-scrollbar {
+  width: 8px;
+  z-index: 0;
+}

@@ -1,0 +1,42 @@
+# Java backend
+# IDE and build system
+.classpath
+.project
+.factorypath
+.settings/
+.mvn/
+# Maven build output
+target/
+# Environment files
+.env
+.env.*
+# Eclipse/IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js frontend
+node_modules/
+dist/
+build/
+# Vite/React build output
+*.log
+# Environment files
+.env
+.env.*
+# OS files
+.DS_Store
+Thumbs.db
+# Editor files
+.vscode/
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore backup files
+*.bak
