@@ -2,6 +2,9 @@
 
 Weather Dashboard is a full-stack web application that provides real-time weather information and AI-powered insights for multiple locations. The project is built with a modern technology stack, supporting multiple languages for a global user experience.
 
+<img width="2560" height="1080" alt="weather-ai-1" src="https://github.com/user-attachments/assets/84257744-a0a6-4a16-9e24-01adf22c954a" />
+
+
 ## Technologies Used
 
 - **Backend:** Java 25 (Spring Boot)
