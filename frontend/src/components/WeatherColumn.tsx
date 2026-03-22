@@ -154,13 +154,6 @@ export const WeatherColumn = ({ id, query, weather, onQueryChange, onWeatherChan
                     <span className="mt-2 text-blue-500 font-semibold tracking-wide animate-pulse">{t('loading')}</span>
                 </div>
             )}
-            {/*
-                // Custom animation for slower, smoother spin
-                // Add this to your global CSS (e.g., App.css or index.css):
-                // .animate-spin-slow { animation: spin 1.2s linear infinite; }
-                // @keyframes spin { to { transform: rotate(360deg); } }
-            */}
-
 
             {(!loading && query && !suggestions.length && query.length < 3) && (
                 <li
