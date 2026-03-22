@@ -9,7 +9,7 @@
 target/
 # Environment files
 .env
-.env.*
+!.env.example
 # Eclipse/IntelliJ
 *.iml
 *.ipr

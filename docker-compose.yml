@@ -1,0 +1,35 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: weather-backend:latest
+    container_name: weather-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      # se usar OPENAI ou outros secrets:
+      - OPEN_AI_API_KEY=${OPEN_AI_API_KEY}
+      - OPEN_WEATHER_API_KEY=${OPEN_WEATHER_API_KEY}
+    volumes:
+      - ./backend/.env:/app/.env
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: weather-frontend:latest
+    container_name: weather-frontend
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_API_URL=http://localhost:8080
+    depends_on:
+      backend:
+        condition: service_healthy

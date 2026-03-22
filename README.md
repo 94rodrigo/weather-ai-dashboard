@@ -41,8 +41,8 @@ cp backend/.env.example backend/.env
 
 Edit `backend/.env` and set the following variables:
 
-- `OPENWEATHER_API_KEY`
-- `OPENAI_API_KEY`
+- `OPEN_WEATHER_API_KEY`
+- `OPEN_AI_API_KEY`
 
 ### Running the Backend
 

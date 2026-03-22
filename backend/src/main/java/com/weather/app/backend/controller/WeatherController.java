@@ -11,7 +11,7 @@ import com.weather.app.backend.dto.OneCallWeatherResponse;
 import com.weather.app.backend.dto.WeatherResponse;
 import com.weather.app.backend.service.WeatherService;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000"})
 @RestController
 @RequestMapping("/api/weather")
 public class WeatherController {

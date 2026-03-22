@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.weather.app.backend.dto.GeocodingResponse;
 import com.weather.app.backend.service.GeocodingService;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000"})
 @RestController
 @RequestMapping("/api/geo")
 public class GeocodingController {
